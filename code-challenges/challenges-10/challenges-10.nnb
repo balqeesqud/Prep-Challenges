@@ -1,0 +1,22 @@
+{
+    "cells": [
+        {
+            "language": "typescript",
+            "source": [
+                "function birthdayCakeCandles(candles) {\n  // Write your code here\n  \nlet maxHeight = 0;  // store the maximum height\nlet numTallestCandles = 0;  //  store the count of tallest candles\n\n//n is the array length of candles = (n= cadndels.length)\n\n// Find the maximum height\nfor (let i = 0; i < candles.length; i++) {\n  if (candles[i] >maxHeight) {\n    maxHeight = candles[i];\n  }\n}\n\n// Count the number of candles with the maximum height\nfor (let i = 0; i <candles.length; i++) {\n  if (candles[i] === maxHeight) {\n    numTallestCandles++;\n  }\n}\n\nreturn numTallestCandles;\n}\nbirthdayCakeCandles([4,4,1,3]);"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/plain",
+                            "value": [
+                                "\u001b[33m2\u001b[39m"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
