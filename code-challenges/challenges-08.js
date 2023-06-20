@@ -18,8 +18,8 @@
 
 // Input:
 // {
-//     "Romio Joliat": 35,
-//     "Mario Ristrova": 39,
+//     "Romio Joliat": 35,      key:value
+//     "Mario Ristrova": 39,    name : obj[name]     means the key is defined as name and its value is obj[name]
 //     "Sofia firnando": 50,
 // }
 //
@@ -31,8 +31,9 @@ const customerAndAge = (obj) => {
   const customers = [];
   for (let name in obj) {
     if (obj.hasOwnProperty(name)) {
-      const age = obj[name];
-      const formattedString = `Customer Name :${name} , Age :${age}`;
+      const age = obj[name];  // key:value
+                             // name : obj[name]     means the key is defined as name and its value is obj[name]
+      const formattedString = `Customer Name :${name} , Age :${age}`; // back tic interpolation expression 
       customers.push(formattedString);
     }
   }
