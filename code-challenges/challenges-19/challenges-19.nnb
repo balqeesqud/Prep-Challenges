@@ -1,0 +1,79 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "## Hacker Rank\n\nFor Thursdays you will be solving some selected challenges on HackerRank, please create an account if you don't have then\nFollow the links below:\nread them carefully and solve them then copy-paste your solution below in Code Block"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### **Required**:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Append And Delete](https://www.hackerrank.com/challenges/append-and-delete/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function appendAndDelete(s, t, k) {          //s initial string // t desired string  // k number of operations    \n  if (k >= s.length + t.length) {\n      return \"Yes\";\n  }\n  if (s === t && k % 2 === 0) {\n      return \"Yes\";\n  }\n  let charMatch = 0;\n  for (let i = 0; i < Math.min(s.length, t.length); i++) {\n      if (s[i] === t[i]) {\n          charMatch++;\n      } else {\n          break;\n      }\n  }\n  const remainingMoves = k - (s.length - charMatch) - (t.length - charMatch);\n  if (remainingMoves >= 0 && remainingMoves % 2 === 0) {\n      return \"Yes\";\n  }\n  return \"No\";\n}\nconst s = \"hacker\";\nconst t = \"rank\";\nconst k = 9;\n\nconst result = appendAndDelete(s, t, k);\nconsole.log(result);\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "No",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### **Optional**:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Encryption](https://www.hackerrank.com/challenges/encryption/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [The Time In Words](https://www.hackerrank.com/challenges/the-time-in-words/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        }
+    ]
+}
